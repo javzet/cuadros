@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; 
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: 5fr 2fr;
+}
+
+.botones {
+  width: 10%;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+
+  width: 80vw;
+  height: 50vh;
+  margin: 0 auto;
+
+}
+
+.cuadricula-elemento {
+  padding: 1rem;
+  background-color: #eee;
+  border-radius: 0.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  background-color: inherit;
+  padding: 0.6rem 1.6rem;
+  border-radius: 99999px;
+
+  transition: opacity 0.3s ease;
+
+  display: block;
+  margin: 0.4rem auto; 
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.imprimirTablero {
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.generarTablero {
+  background-color: #1815be;
+  color: #ffffff;
+  
+}
